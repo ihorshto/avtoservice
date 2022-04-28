@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.background{
+  background-image: url('../images/bg/1.jpg');
+  height: 500px;
+  width: 500px;
+  background-color: red;
+  color: red;
+
+}
+
+@import 'media';
