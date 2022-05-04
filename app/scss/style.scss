@@ -27,9 +27,16 @@
     z-index: 20;
     border-bottom: 1px solid $green;
   }
+  &__socials{
+    display: none;
+  }
 }
 
 .menu {
+  &__btn {
+    display: none;
+  }
+
   &__list {
     display: flex;
   }
@@ -738,11 +745,11 @@
     padding: 20px 0;
   }
 
-  &__socials {
+  .socials {
     display: flex;
   }
 
-  &__socials-link {
+  .socials-link {
     padding: 0 12px;
 
     & path {
@@ -756,6 +763,7 @@
     }
   }
 }
+
 
 
 @import 'media';

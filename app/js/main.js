@@ -10,6 +10,18 @@ $(function () {
     touchThreshold: 10,
   })
 });
+
+// menu burger
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+   $('.menu__btn').on('click', function () {
+     $('.phone__box').toggleClass('phone__box--active');
+   });
+   $('.menu__btn').on('click', function () {
+     $('.socials').toggleClass('socials--active');
+   });
+
 // scroll
 $(".menu a, .button-details").on("click", function (event) {
   event.preventDefault();
@@ -25,11 +37,11 @@ const openPopup = document.getElementById('popup-open');
 const closePopup = document.getElementById('popup-close');
 const popup = document.getElementById('popup');
 
-openPopup.addEventListener('click', function(e){
+openPopup.addEventListener('click', function (e) {
   e.preventDefault();
   popup.classList.add('popup__active');
 });
-closePopup.addEventListener('click', () =>{
+closePopup.addEventListener('click', () => {
   popup.classList.remove('popup__active');
 });
 
@@ -45,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let formData = new FormData(form);
 
-    if(error === 0){
+    if (error === 0) {
       form.classList.add('_sending');
       let response = await fetch('sendmail.php', {
         method: 'POST',
         body: formData
       });
-      if (response.ok){
+      if (response.ok) {
         let result = await response.json();
         alert(result.message);
         formPreview.innerHTML = '';
@@ -61,8 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         alert("Помилка main");
         form.classList.remove('_sending');
       }
-    }
-    else{
+    } else {
       alert("Заповніть обов'язкові поля")
     }
   }
@@ -79,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (phoneTest(input)) {
           formAddError(input);
           error++;
-        } 
+        }
       } else {
         if (input.value === '') {
           formAddError(input);
@@ -105,3 +116,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // return !/^\+380\d{3}\d{2}\d{2}\d{2}$/.test(input.value);
   }
 });
+
