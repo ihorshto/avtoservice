@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZborivService</title>
+  <title>Zboriv Service</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -50,7 +50,22 @@
               відновлювального ремонту
               легкових автомобілів
             </h1>
-            <button class="button">Залишити заявку</button>
+            <div class="button__popup">
+              <a id="popup-open" class="button__link" href="#">Залишити заявку</a>
+            </div>
+            <div class="popup" id="popup">
+              <div class="popup__container">
+                <div class="popup__body" id="popup__body">
+                  <h5 class="popup__body-title">Залишити заявку</h5>
+                  <form class="popup__form" action="">
+                    <input class="popup__body-input" type="text" placeholder="Як вас звати?">
+                    <input class="popup__body-input" type="text" placeholder="Номер телефону">
+                    <button class="button popup__send-button">Надіслати</button>
+                  </form>
+                  <div class="popup__close" id="popup-close">&#10006</div>
+                </div>
+              </div>
+            </div>
           </div>
           <img class="header__bottom-img" src="images/header-img.png" alt="image">
         </div>

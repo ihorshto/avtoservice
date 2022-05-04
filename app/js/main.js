@@ -1,5 +1,6 @@
 "use strict"
 
+// slider
 $(function () {
   $('.photos-slider__inner').slick({
 
@@ -9,7 +10,7 @@ $(function () {
     touchThreshold: 10,
   })
 });
-
+// scroll
 $(".menu a, .button-details").on("click", function (event) {
   event.preventDefault();
   var id = $(this).attr('href'),
@@ -19,7 +20,20 @@ $(".menu a, .button-details").on("click", function (event) {
   }, 1500);
 });
 
+// popup
+const openPopup = document.getElementById('popup-open');
+const closePopup = document.getElementById('popup-close');
+const popup = document.getElementById('popup');
 
+openPopup.addEventListener('click', function(e){
+  e.preventDefault();
+  popup.classList.add('popup__active');
+});
+closePopup.addEventListener('click', () =>{
+  popup.classList.remove('popup__active');
+});
+
+// form contacts
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form');
   form.addEventListener('submit', formSend);
