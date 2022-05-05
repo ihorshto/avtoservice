@@ -8,6 +8,28 @@ $(function () {
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     touchThreshold: 10,
+        responsive: [{
+            breakpoint: 1300,
+            settings: {
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 1080,
+            settings: {
+              slidesToShow: 2,
+              arrows: false
+            }
+          },
+           {
+             breakpoint: 760,
+             settings: {
+               slidesToShow: 1,
+               arrows: false
+             }
+           },
+          
+        ],
   })
 });
 
@@ -31,6 +53,15 @@ $(".menu a, .button-details").on("click", function (event) {
     scrollTop: top
   }, 1500);
 });
+
+  $(window).on("scroll", function () {
+    var scrollPos = $(window).scrollTop();
+    if (scrollPos <= 0) {
+      $('.header__top').removeClass('header__top--scroll');
+    } else {
+      $('.header__top').addClass('header__top--scroll');
+    }
+  });
 
 // popup
 const openPopup = document.getElementById('popup-open');
