@@ -168,7 +168,6 @@
   }
 
   .services {
-    padding-top: 30px;
     margin-bottom: 30px;
 
     &__items {
@@ -179,14 +178,6 @@
 
   .photos-slider {
     margin-bottom: 30px;
-  }
-
-  .advantages {
-    padding-top: 30px;
-  }
-
-  .contacts {
-    padding-top: 30px;
   }
 
 }
@@ -303,8 +294,8 @@
   }
 
   .services {
-    margin-bottom: 30px;
-    padding-top: 30px;
+    margin-bottom: 0;
+    padding-top: 70px;
 
     &__items {
       grid-template-columns: 1fr;
@@ -313,8 +304,16 @@
   }
 
   .photos-slider {
-    padding-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 70px;
+    margin-bottom: 0;
+  }
+
+  .about {
+    padding-top: 70px;
+
+    &__inner {
+      margin-bottom: 0;
+    }
   }
 
   .logo.logo-footer {
@@ -322,11 +321,12 @@
   }
 
   .advantages {
-    padding-top: 30px;
+    padding-top: 70px;
+    margin-bottom: 0;
   }
 
   .contacts {
-    padding: 10px 0 110px;
+    padding: 70px 0 110px;
 
     &__info {
       padding: 40px 25px;
@@ -364,7 +364,6 @@
   }
 
   .about {
-    padding-top: 30px;
 
     &__video-popup {
       min-height: 250px;
