@@ -3,7 +3,6 @@
 // slider
 $(function () {
   $('.photos-slider__inner').slick({
-
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplaySpeed: 2000,
@@ -54,6 +53,7 @@ $(".menu a, .button-details").on("click", function (event) {
   }, 1500);
 });
 
+// appear border-bottom in menu  
   $(window).on("scroll", function () {
     var scrollPos = $(window).scrollTop();
     if (scrollPos <= 0) {
@@ -144,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Функція тесту номера телефона
   function phoneTest(input) {
     return !/^(\+380|380|0)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{1}$/.test(input.value);
-    // return !/^\+380\d{3}\d{2}\d{2}\d{2}$/.test(input.value);
   }
 });
 
