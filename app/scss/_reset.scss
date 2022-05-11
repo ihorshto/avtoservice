@@ -36,6 +36,7 @@ ul[class] {
   list-style: none;
 }
 
+
 img {
   max-width: 100%;
   display: block;
@@ -49,6 +50,11 @@ select {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: $default;
+
 }
 
+a:checked {
+  color: $default;
+}

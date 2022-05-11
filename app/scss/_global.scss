@@ -50,3 +50,10 @@ body {
     filter: none;
   }
 }
+
+@media (max-width: 420px) {
+  .title{
+      font-size: 28px;
+      line-height: 34px;
+  }
+}
