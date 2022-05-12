@@ -16,13 +16,15 @@
     margin-bottom: 0;
   }
 
-  &__top {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 5px 15px;
+  &__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+  }
+
+  &__top {
+    padding: 5px 0;
     position: fixed;
     top: 0;
     right: 0;
@@ -30,22 +32,28 @@
     background-color: #fff;
     z-index: 20;
     border-bottom: 1px solid transparent;
-    transition: all .5s;
+    transition: all .3s;
+    z-index: 100;
   }
 
   &__top--scroll {
-    transition: all .5s;
+    transition: all .3s;
     border-bottom: 1px solid $green;
   }
 
   &__socials {
     display: none;
   }
+
+  .logo {
+    z-index: 100;
+  }
 }
 
 .menu {
   &__btn {
     display: none;
+    z-index: 100;
   }
 
   &__list {
@@ -57,7 +65,8 @@
 
   }
 
-  &__list-link {
+  &__list-link,
+  .menu__list-link--transition {
     @extend %raleway-500;
     color: $default;
     transition: all .3s;
@@ -68,6 +77,10 @@
   }
 }
 
+.phone__box {
+  z-index: 100;
+}
+
 .phone {
   font-size: 24px;
   line-height: 28px;
@@ -76,7 +89,7 @@
   margin-bottom: 2px;
   display: inline-block;
   position: relative;
-  transition: all .3s;
+  transition: all .5s;
 
   &::before {
     position: absolute;
@@ -101,7 +114,7 @@
 }
 
 .header {
-  &__bottom {
+  &__bottom-inner {
     display: flex;
   }
 
@@ -691,6 +704,9 @@
 
   &__info-text {
     margin-bottom: 5px;
+    a{
+      color: #17005c;
+    }
   }
 
   &__form {
@@ -784,12 +800,16 @@
 }
 
 .footer {
+  &__wrapper {
+    border-top: 1px solid #49D16A;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 1px solid #49D16A;
+
     padding: 20px 0;
   }
 

@@ -58,7 +58,7 @@ $(window).on("scroll", function () {
 });
 
 // scroll
-$(".menu a, .button-details").on("click", function (event) {
+$(".menu .menu__list-link, .button-details").on("click", function (event) {
   event.preventDefault();
   var id = $(this).attr('href'),
     top = $(id).offset().top;
