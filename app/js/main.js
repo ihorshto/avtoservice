@@ -46,6 +46,9 @@ $('.menu__btn, .menu a').on('click', function () {
 $('.menu__btn, .menu a').on('click', function () {
   $('.socials').toggleClass('socials--active');
 });
+$('.menu__btn, .menu a').on('click', function () {
+  $('.menu').toggleClass('menu--active');
+});
 
 // appear border-bottom in menu  
 $(window).on("scroll", function () {
@@ -149,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   // Функція тесту номера телефона
   function phoneTest(input) {
-    return !/^(\+380|380|0)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{1}$/.test(input.value);
+   return !/^(\+380|380|0)?[\s\-]?\(?[356789][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{1}$/.test(input.value);
   }
 });
 
@@ -222,6 +225,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   // Функція тесту номера телефона
   function phonePopupTest(inputPopup) {
-    return !/^(\+380|380|0)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{1}$/.test(inputPopup.value);
+    return !/^(\+380|380|0)?[\s\-]?\(?[356789][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{1}$/.test(inputPopup.value);
   }
 });
