@@ -7,19 +7,18 @@
   .photos-item {
     &__inner {
       display: block;
+
     }
 
     &__text-box {
       max-width: 100%;
-      margin-bottom: 30px;
+      margin-top: 30px;
     }
 
     &__slider {
       margin: 0 auto;
     }
   }
-
-
 }
 
 @media (max-width: 1080px) {
@@ -30,7 +29,7 @@
     &__list {
       transform: translateY(-200%);
       position: absolute;
-      top: 110px;
+      top: 95px;
       width: 100%;
       left: 0;
       flex-direction: column;
@@ -290,7 +289,7 @@
 @media (max-width: 500px) {
 
   .title {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 
   .menu__list.menu__list--active {
@@ -299,7 +298,7 @@
 
   .phone__box.phone__box-header {
     position: absolute;
-    top: 420px;
+    top: 405px;
     left: 50%;
     max-width: 200px;
     width: 100%;
@@ -337,7 +336,7 @@
     &__socials {
       display: flex;
       position: absolute;
-      top: 485px;
+      top: 470px;
       left: 50%;
       background-color: #fff;
       transform: translateX(300%);

@@ -1,6 +1,6 @@
 {
-    "name": "\u0417\u0431\u043e\u0440\u0456\u0432 \u0421\u0422\u041e",
-    "short_name": "\u0417\u0431\u043e\u0440\u0456\u0432 \u0421\u0422\u041e",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -8,8 +8,8 @@
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-256x256.png",
-            "sizes": "256x256",
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],

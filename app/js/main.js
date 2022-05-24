@@ -107,10 +107,10 @@ document.addEventListener('DOMContentLoaded', function () {
       if (response.ok) {
         form.reset();
         form.classList.remove('_sending');
-        console.log('Well done!')
+        alert("Заявка успішно відправлена!");
       } else {
-        console.log("Error")
         form.classList.remove('_sending');
+        alert("Помилка! Спробуйте пізніше");
       }
     } else {
       console.log("Заповніть обов'язкові поля")
@@ -180,10 +180,10 @@ document.addEventListener('DOMContentLoaded', function () {
         popup_form.reset();
         popup.classList.remove('_sending');
         popup.classList.remove('popup__active');
-        console.log('Well done!')
+                alert("Заявка успішно відправлена!");
       } else {
-        console.log("Error")
         popup.classList.remove('_sending');
+        alert("Помилка! Спробуйте пізніше");
       }
     } else {
       console.log("Заповніть обов'язкові поля")
